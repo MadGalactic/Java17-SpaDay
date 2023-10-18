@@ -1,5 +1,6 @@
 body {
     background-color: pink;
+    font-family: 'Karla', sans-serif;
 }
 
 div {
@@ -18,9 +19,29 @@ h1 {
         background-color: white;
 }
 
+h1, h2 {
+    font-family: 'Satisfy', cursive;
+}
+
 table {
     margin: auto;
             width: 50%;
             padding: 10px;
             text-align: center;
+}
+
+#polish-collection {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+.polish-sample{
+height:20px;
+width: 20px;
+margin: 0;
+padding: 0;
 }
