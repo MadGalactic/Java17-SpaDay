@@ -9,9 +9,10 @@ import java.util.ArrayList;
 
 
 @Controller
+@RequestMapping("/services")
 public class SpaDayController {
 
-    @GetMapping
+    @GetMapping("")
     public String customerForm () {
         return "serviceSelection";
     }
