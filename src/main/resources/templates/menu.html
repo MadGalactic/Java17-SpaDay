@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th = "http://www.thymeleaf.org/">
-<head>
-    <meta charset="UTF-8" />
-    <title>Spa Menu</title>
-    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
-</head>
+<head th:replace="~{fragments :: head}"></head>
 <body>
+<header th:replace="~{fragments :: header}"></header>
 <h1>My Super Fancy Spa</h1>
 <div id = "clientProfile">
     <h2>My Profile</h2>
@@ -27,11 +24,11 @@
     </div>
     <div th:if = "${client.nailService == 'manicure'}">
         <h3>Manicure</h3>
-        <p th:replace =  "fragments :: manicureDescription"></p>
+        <p>Get a mani</p>
     </div>
     <div th:if = "${client.nailService == 'pedicure'}">
         <h3>Pedicure</h3>
-        <p th:replace = "fragments :: pedicureDescription"></p>
+        <p>Get a pedi</p>
     </div>
 </div>
 </body>
